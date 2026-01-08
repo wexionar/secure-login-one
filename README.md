@@ -2,6 +2,26 @@
 
 A secure login where the user's private key is never hosted on servers or the user's online devices ( this project can also be used as a form of two-factor authentication ( 2FA ) where the user's private key is never hosted on servers )
 
+---
+
+## 📜 Security Philosophy: The "Zero-Exposure" Protocol
+
+To ensure absolute cryptographic integrity and protect the user from modern digital threats, this project adheres to the following strict principles:
+
+* **Absolute Private Key Isolation:** No private key (or any fragment of it) should ever be **stored, copied, typed, or dragged** onto any device with an active internet connection. This eliminates risks from keyloggers, clipboard sniffers, and remote access trojans.
+* **Air-Gapped Interaction:** We strongly discourage the use of physical connections (USB, cables, or data ports) which can carry hardware-level malware. Communication must be strictly visual through **QR code scanning**.
+* **Dedicated Offline Hardware:** We recommend repurposing older mobile devices as **"Cold Vaults."** These devices must remain permanently disconnected (WiFi, Bluetooth, GPS, and Cellular disabled or hardware-removed), running only specialized security software.
+* **The Server's Responsibility:** Infrastructure providers must evolve to support these sovereign tools. Users are often the "weakest link" only because the industry has failed to provide systems that do not rely on human memory or exposure to dangerous online environments.
+
+### 🌐 Universal Applications
+This model serves as a foundational blueprint for:
+* **Secure User Login** & Passwordless Authentication.
+* **True Two-Factor Authentication (2FA)** without server-side secrets.
+* **Account Recovery** & Identity Confirmation.
+* **Secure Transaction Signing** for Banking, Fintech, and Cryptocurrencies.
+
+---
+
 ## Requirements
 
 ![table](docs/table.png)
